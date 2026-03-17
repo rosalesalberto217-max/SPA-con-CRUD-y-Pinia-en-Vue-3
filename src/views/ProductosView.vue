@@ -13,7 +13,7 @@ const carritoStore = useCarritoStore()
     <div class="col-md-4 mb-4" v-for="producto in productoStore.productos" :key="producto.id">
       <div class="card producto-card shadow">
         <img
-          :src="'img/' + producto.imagen"
+          :src="`${productoStore.productos.length ? '/SPA-con-CRUD-y-Pinia-en-Vue-3/img/' + producto.imagen : ''}`"
           class="card-img-top"
           style="height: 220px; object-fit: cover"
         />
