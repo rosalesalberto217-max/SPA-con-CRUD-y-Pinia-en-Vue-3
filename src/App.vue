@@ -19,7 +19,7 @@ const carritoStore = useCarritoStore()
         </router-link>
 
         <router-link class="btn btn-warning" to="/carrito">
-          🛒 Carrito ({{ carritoStore.totalArticulos }})
+          Carrito ({{ carritoStore.totalArticulos }})
         </router-link>
       </div>
     </div>
